@@ -28,12 +28,12 @@ $(function () {
      * Comment the lines out to remove the grid
      */
 
-    // for (let i = 100; i < canvas.width; i += 100) {
-    //   createPlatform(i, canvas.height, -1, -canvas.height);
-    // }
-    // for (let i = 100; i < canvas.height; i += 100) {
-    //   createPlatform(canvas.width, i, -canvas.width, -1);
-    // }
+    for (let i = 100; i < canvas.width; i += 100) {
+      createPlatform(i, canvas.height, -1, -canvas.height);
+    }
+    for (let i = 100; i < canvas.height; i += 100) {
+      createPlatform(canvas.width, i, -canvas.width, -1);
+    }
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE BELOW THIS POINT///////////
@@ -43,8 +43,24 @@ $(function () {
     // Create platforms
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
-
-
+createPlatform(700, 602, 10, 160)
+createPlatform(800, 470, 10, 50)
+createPlatform(460, 470, 20, 10)
+createPlatform(1100, 450, 10, 300)
+createPlatform(20, 299, 10, 1)
+createPlatform(1200, 535, 200, 10)
+createPlatform(1100, 630, 200, 10)
+createPlatform(1200, 335, 200, 10)
+createPlatform(1110, 430, 200, 10)
+createPlatform(1000, 200, 100, 5)
+createPlatform(1370, 199, 10, 1)
+createPlatform(500, 200, 20, 10)
+createPlatform(400, 300, 20, 10)
+createPlatform(300, 400, 20, 10)
+createPlatform(250, 300, 20, 10)
+createPlatform(200, 200, 20, 10)
+createPlatform(800, 300, 20, 10)
+createPlatform(650, 300, 20, 10)
 
     
     // TODO 2
@@ -52,18 +68,25 @@ $(function () {
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
-
-
-
-
+createCollectable("diamond", 1100, 700, 0, 0 )
+createCollectable("diamond",20, 40, 0, 0)
+createCollectable("diamond",1360, 0, 0, 0)
+createCollectable("diamond", 1150, 700, 0, 0 )
+createCollectable("diamond", 1200, 700, 0, 0 )
+createCollectable("database", 1250, 700, 0, 0 )
+createCollectable("database", 1300, 700, 0, 0 )
+createCollectable("grace", 1350, 700, 0, 0 )
+createCollectable("grace", 1380, 700, 0, 0 )
+createCollectable("max", 1240, 675, 0, 0 )
     // TODO 3
     // Create cannons
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
-
-
-
+    createCannon("top", 425, 700, 50, 50)
+    createCannon("top", 450, 700, 50, 50)
+    createCannon("top", 475, 700, 50, 50)
+    
 
     /////////////////////////////////////////////////
     //////////ONLY CHANGE ABOVE THIS POINT///////////
