@@ -91,10 +91,10 @@ let halleImage;
 let animationDetails = {};
 
 var collectableList = {
-  database: { image: "images/collectables/database.png" },
+  database: { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReRj5iySB8IATF5k_sQwBRKYkEjreWLxbVx_y-Vj1sdXBtP4lxHWWIhvrffWbGPHpXkpU:https://lookaside.fbsbx.com/lookaside/crawler/media/%3Fmedia_id%3D2144018932368630&usqp=CAU" },
   diamond: { image: "images/collectables/diamond-head.png" },
   grace: { image: "images/collectables/grace-head.png" },
   kennedi: { image: "images/collectables/kennedi-head.png" },
-  max: { image: "images/collectables/max-head.png" },
-  steve: { image: "images/collectables/steve-head.png" },
+  max: { image: "https://mail.google.com/mail/u/0?ui=2&ik=d16f37cffe&attid=0.1&permmsgid=msg-f:1779483670382554154&th=18b1fef858c2ac2a&view=att&disp=safe&realattid=18b1fef4a7acb13af271" },
+  steve: { image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn5V1yuT3eGFJQ_qEikbVP3kBshMT3ao6pNQtRGFoqWcket1kSdnM7NNuAvCdfx3CX8bc:https://smashey.files.wordpress.com/2010/06/manutebol2.jpg&usqp=CAU" },
 };
