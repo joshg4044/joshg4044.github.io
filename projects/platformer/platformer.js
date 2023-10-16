@@ -68,15 +68,15 @@ createPlatform(650, 300, 20, 10)
     // You must decide on the collectable type, the x position, the y position, the gravity, and the bounce strength
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
-createCollectable("max", 1100, 700, 0, 0 )
-createCollectable("max",20, 40, 0, 0)
-createCollectable("max",1360, 0, 0, 0)
+createCollectable("grace", 1100, 700, 0, 0 )
+createCollectable("grace",20, 40, 0, 0)
+createCollectable("grace",1360, 0, 0, 0)
 createCollectable("steve", 1150, 700, 0, 0 )
-createCollectable("max", 1200, 700, 0, 0 )
+createCollectable("grace", 1200, 700, 0, 0 )
 createCollectable("steve", 1250, 700, 0, 0 )
-createCollectable("max", 1300, 700, 0, 0 )
+createCollectable("grace", 1300, 700, 0, 0 )
 createCollectable("steve", 1350, 700, 0, 0 )
-createCollectable("max", 1380, 700, 0, 0 )
+createCollectable("grace", 1380, 700, 0, 0 )
 createCollectable("steve", 1240, 675, 0, 0 )
     // TODO 3
     // Create cannons
