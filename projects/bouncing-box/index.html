@@ -6,22 +6,23 @@
 	<script src="jquery.min.js"></script>
 	<style>
 		.box {
-			width: 70px;
-			height: 70px;
-			background-color: teal;
+			width: 100px;
+			height: 100px;
+			background-color: rgb(255, 0, 170);
 			font-size: 300%;
+			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 			text-align: center;
-			user-select: none;
 			display: block;
 			position: absolute;
 			top: 100px;
-			left: 0px;  /* <--- Change me! */
+			left: 100px;  /* <--- Change me! */
 		}
 		.board{
 			height: 100vh;
+			background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWxyG-Ep09sh_Cqtgw4NT-jnhVcTXeWA-ilVln1VVWQzbBwQJumPVQXsficDJdjYUIMqE:https://i.redd.it/wnp1q3p1bh171.png&usqp=CAU");
 		}
 	</style>
-	<!-- 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 </head>
 <body class="board">
@@ -62,17 +63,28 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			
+			var positionX = 300;
+			var points = 0;
+			var speed = 0;
 
-			
+
+
 			/* 
-			This Function will be called 20 times/second. Each time it is called,
+			This Function will be called 20 imes/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
 			turn it around! 
 			*/
 			function update() {
 				
+				moveBoxTo(positionX)
 
+				positionX = positionX + (speed);
+				if (positionX >= boardWidth) {
+					speed = -speed;
+				}
+				else if (positionX < 0) {
+					speed = - speed;
+				}
 			};
 
 			/* 
@@ -81,10 +93,20 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				
+				points += 1;
+				positionX = 0;
+				speed += 3;
+				changeBoxText(points);
 
 
-			};
+
+				if (speed > 0) {
+					speed = speed + 3
+				}
+				else if (speed < 0) {
+					speed = speed - 3
+				}
+			}
 		})();
 	</script>
 </body>
