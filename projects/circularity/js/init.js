@@ -26,15 +26,16 @@ var init = function (window) {
         // TODO 2 : Create a function that draws a circle 
         function drawCircle() { 
         circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
-        physikz.addRandomVelocity(circle, canvas, 10, 10);
+        physikz.addRandomVelocity(circle, canvas, 1, 25);
         view.addChild(circle);
         circles.push(circle);
         }
 
         // TODO 3 / 7 : Call the drawCircle() function 
         
-        for (var i = 0; i <= 100; i++)
+        for (var i = 0; i <= 1000; i++){
         drawCircle()
+        }
 
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -48,17 +49,16 @@ var init = function (window) {
         function update() {
             // TODO 4 : Update the circle's position //
            
-            
+            // deleted so we D.R.Y.
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-            for (var i = 0; i < circles.length; i++){
-                game.checkCirclePosition(circles[i]);
-                } 
+          
            
 
             // TODO 9 : Iterate over the array
             for (var i = 0; i < circles.length; i++){
-                physikz.updatePosition(circles[i]);
+                physikz.updatePosition(circles[i])
+                game.checkCirclePosition(circles[i]);
                 }
             
         }
