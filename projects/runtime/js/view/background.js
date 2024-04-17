@@ -29,6 +29,10 @@ var background = function (window) {
         // ANIMATION VARIABLES HERE //////////////////////////////////////
         //////////////////////////////////////////////////////////////////
         // TODO (several):
+        tree = draw.bitmap("img/tree.png");
+        tree.x = 0
+        tree.y = 0
+        background.addChild(tree);
       
       
         // called at the start of game and whenever the page is resized
@@ -39,7 +43,7 @@ var background = function (window) {
             // TODO 1:
             // this currently fills the background with an obnoxious yellow;
             // you should modify both the height and color to suit your game
-            var backgroundFill = draw.rect(canvasWidth,canvasHeight,'yellow');
+            var backgroundFill = draw.rect(canvasWidth,canvasHeight,'cyan');
             background.addChild(backgroundFill);
             
             // TODO 2: - Add a moon and starfield
