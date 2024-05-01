@@ -24,6 +24,7 @@ var background = function (window) {
         
         // container which will be returned
         var background;
+        var tree
         
         //////////////////////////////////////////////////////////////////
         // ANIMATION VARIABLES HERE //////////////////////////////////////
@@ -39,6 +40,7 @@ var background = function (window) {
         // add objects for display in background. draws each image added to the background once
         function render() {
             background.removeAllChildren();
+            
 
             // TODO 1:
             // this currently fills the background with an obnoxious yellow;
@@ -47,7 +49,16 @@ var background = function (window) {
             background.addChild(backgroundFill);
             
             // TODO 2: - Add a moon and starfield
-            
+            var moon = draw.bitmap("img/moon.png");
+moon.x = 300;
+moon.y = 200;
+moon.scaleX = 10.0;
+moon.scaleY = 10.0;
+background.addChild(moon);
+var circle = draw.circle(10, "white", "LightGray", 2);
+circle.x = canvasWidth * Math.random();
+circle.y = groundY * Math.random();
+background.addChild(circle);
             
             // TODO 4: Part 1 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
             
