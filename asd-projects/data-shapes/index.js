@@ -90,7 +90,7 @@ dataShapes.push(shape)
 
   function goodDisplay() {
     // TODO 4-b: call your handleGood function
-    var currentshape = dataShapes[currentIndex]
+    var currentShape = dataShapes[currentIndex]
     handleGood(currentShape.color, currentShape.shape, currentShape.repeat);
   }
 
